@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<base href="/">
+    <title>Gmod Soldiers</title>
+    <meta name="description" content="Now providing military simulation scenarios in GMOD (Garry's Mod). If you are looking for a group that does its best to provide a military simulation as close as it can, join GS. If there is something that we do not have, we are opened to anything that would make this military simulation better.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>   
+    <my-app>
+        <!-- Initial loading screen -->
+        <div id="loading">
+          <div id="loading-center">
+            <div id="loading-center-absolute">
+              <div class="object" id="object_one"></div>
+              <div class="object" id="object_two"></div>
+              <div class="object" id="object_three"></div>
+              <div class="object" id="object_four"></div>
+              <div class="object" id="object_five"></div>
+              <div class="object" id="object_six"></div>
+              <div class="object" id="object_seven"></div>
+              <div class="object" id="object_eight"></div>
+              <div class="object" id="object_big"></div>
+            </div>
+          </div>
+        </div>       
+    </my-app>
+  </body>
+</html>
