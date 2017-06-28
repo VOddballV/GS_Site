@@ -89,7 +89,7 @@
 
 
 #loading{
-	background-color: rgba(0, 0, 215,1);
+	background-color: rgb(0, 45, 1);
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -118,7 +118,7 @@
 .object{
 	width: 20px;
 	height: 20px;
-	background-color: goldenrod;
+	background-color: #ffffff;
 	position: absolute;
 	left: 65px;
 	top: 65px;

@@ -1,7 +1,5 @@
 
 <div *ngFor="let item of navItems">
-	<a routerLink="/{{item.text}}" routerLinkActive="active">{{item.text}}</a>
-</div>
-<div>
-	<a href="/forums">Forums</a>
+	<a *ngIf="item.isApp" routerLink="/{{item.text}}" routerLinkActive="active">{{item.text}}</a>
+	<a *ngIf="!item.isApp" href="/{{item.text}}">{{item.text}}</a>
 </div>

@@ -11,8 +11,9 @@ var NavbarClass_1 = require("./NavbarClass");
 var NavBarComponent = (function () {
     function NavBarComponent() {
         this.navItems = [
-            new NavbarClass_1.Navbar(1, "Home", "#/home"),
-            new NavbarClass_1.Navbar(3, "Unit", "#/unit")
+            new NavbarClass_1.Navbar(1, "Home", "/home"),
+            new NavbarClass_1.Navbar(2, "Forums", "/forums", false),
+            new NavbarClass_1.Navbar(3, "Unit", "/unit")
         ];
     }
     return NavBarComponent;
