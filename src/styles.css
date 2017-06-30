@@ -1,3 +1,14 @@
+header{
+	position: fixed !important;
+  z-index: 9999;
+}
+.rank{
+	color: gold !important;
+}
+.unit-container{
+	background-color: black;
+	border: solid 2px red;
+}
 /*
   Loading animation
 */

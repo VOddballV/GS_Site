@@ -4,7 +4,7 @@ import { routerTransition } from '../Animation/index.js'
 
 @Component({
     selector: 'unitsig',
-    templateUrl: './UnitSig.html',
+    templateUrl: './unitsig.component.html',
 	animations: [routerTransition],
   	host: { '[@routerTransition]': '' }  
 })

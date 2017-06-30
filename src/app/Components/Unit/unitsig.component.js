@@ -23,7 +23,7 @@ var UnitSigComponent = (function () {
 UnitSigComponent = __decorate([
     core_1.Component({
         selector: 'unitsig',
-        templateUrl: './UnitSig.html',
+        templateUrl: './unitsig.component.html',
         animations: [index_js_1.routerTransition],
         host: { '[@routerTransition]': '' }
     })
