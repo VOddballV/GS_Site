@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var UnitSigClass_1 = require("./UnitSigClass");
+var index_js_1 = require("../Animation/index.js");
 var UnitSigComponent = (function () {
     function UnitSigComponent() {
         this.unitItems = [
@@ -22,7 +23,9 @@ var UnitSigComponent = (function () {
 UnitSigComponent = __decorate([
     core_1.Component({
         selector: 'unitsig',
-        templateUrl: './UnitSig.html'
+        templateUrl: './UnitSig.html',
+        animations: [index_js_1.routerTransition],
+        host: { '[@routerTransition]': '' }
     })
 ], UnitSigComponent);
 exports.UnitSigComponent = UnitSigComponent;

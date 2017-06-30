@@ -1,6 +1,8 @@
 import { NgModule}      from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent }  from './app.component';
 import {NavBarComponent} from './Components/Navbar/navbar.component';
 import {UnitSigComponent} from './Components/Unit/unitsig.component';
@@ -17,7 +19,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],
+  imports:      [ BrowserModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule ],
   declarations: [ AppComponent,NavBarComponent,UnitSigComponent, MainComponent ],
   bootstrap:    [ AppComponent ]
 })

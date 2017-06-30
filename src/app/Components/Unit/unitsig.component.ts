@@ -1,9 +1,12 @@
 import {Component, ElementRef} from '@angular/core'
 import {UnitSig} from './UnitSigClass'
+import { routerTransition } from '../Animation/index.js'
 
 @Component({
     selector: 'unitsig',
-    templateUrl: './UnitSig.html'
+    templateUrl: './UnitSig.html',
+	animations: [routerTransition],
+  	host: { '[@routerTransition]': '' }  
 })
 export class UnitSigComponent {
     unitItems = [

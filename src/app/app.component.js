@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var index_js_1 = require("./Components/Animation/index.js");
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -15,7 +16,9 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: './Components/Main/Main.html'
+        templateUrl: './Components/Main/main.component.html',
+        animations: [index_js_1.fadeInAnimation],
+        host: { '[@fadeInAnimation]': '' }
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var index_js_1 = require("../Animation/index.js");
 var MainComponent = (function () {
     function MainComponent() {
     }
@@ -15,7 +16,9 @@ var MainComponent = (function () {
 MainComponent = __decorate([
     core_1.Component({
         selector: 'main',
-        template: ''
+        template: '',
+        animations: [index_js_1.routerTransition],
+        host: { '[@routerTransition]': '' }
     })
 ], MainComponent);
 exports.MainComponent = MainComponent;

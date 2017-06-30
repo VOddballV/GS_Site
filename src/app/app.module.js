@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var platform_browser_1 = require("@angular/platform-browser");
+var animations_1 = require("@angular/platform-browser/animations");
 var app_component_1 = require("./app.component");
 var navbar_component_1 = require("./Components/Navbar/navbar.component");
 var unitsig_component_1 = require("./Components/Unit/unitsig.component");
@@ -29,7 +30,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes)],
+        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes), animations_1.BrowserAnimationsModule],
         declarations: [app_component_1.AppComponent, navbar_component_1.NavBarComponent, unitsig_component_1.UnitSigComponent, main_component_1.MainComponent],
         bootstrap: [app_component_1.AppComponent]
     })
