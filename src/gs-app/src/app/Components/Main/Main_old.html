@@ -1,0 +1,37 @@
+
+
+<html>
+    <body id="page">
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>Gmod Soldiers</h3></div></li>
+            <li><span>Image 02</span><div><h3>"Radio Comms Save Lives"</h3></div></li>
+            <li><span>Image 03</span><div><h3>"Where the hell are we"</h3></div></li>
+            <li><span>Image 04</span><div><h3>"Fuck..."</h3></div></li>
+            <li><span>Image 05</span><div><h3>"We got em"</h3></div></li>
+            <li><span>Image 06</span><div><h3>"I'm ready to serve my country"</h3></div></li>
+			<li><span>Image 07</span><div><h3>"Check your sectors"</h3></div></li>
+			<li><span>Image 08</span><div><h3>"Burning Bridges"</h3></div></li>
+        </ul>
+        <div class="container">     
+            <div style="text-align: center">        
+		<audio id="myVideo" autoplay>
+  			<source src="../../KHBB.mp3" type="audio/mp3">
+		</audio>
+		<script>
+            var vid = document.getElementById("myVideo");
+			vid.volume = 0.2;
+		</script>
+            </div>
+            <header>
+                <h1><span>GMOD SOLDIERS</span></h1>
+                <h2></h2>
+                <p class="codrops-demos">
+                    <navbar></navbar>
+                </p>
+            </header> 
+			<div>
+				<router-outlet></router-outlet>			
+			</div>
+        </div>     
+    </body>
+</html>

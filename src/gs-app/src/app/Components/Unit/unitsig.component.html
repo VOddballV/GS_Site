@@ -1,0 +1,9 @@
+
+<div id="unit-container">
+    <div *ngFor="let item of unitItems">
+        <span class="rank">{{item.sigRank}}</span>
+        <div [innerHTML]="'<div>' + item.sigText + '</div>'">
+        </div>
+    </div>
+</div>
+

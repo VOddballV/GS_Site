@@ -1,0 +1,6 @@
+<span class="codrops-demos">
+	<div *ngFor="let item of navItems">
+		<a *ngIf="item.isApp" routerLink="/{{item.text}}" routerLinkActive="active">{{item.text}}</a>
+		<a *ngIf="!item.isApp" href="{{item.urllink}}">{{item.text}}</a>
+	</div>
+</span>
